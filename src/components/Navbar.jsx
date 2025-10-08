@@ -1,6 +1,6 @@
 import { Github } from 'lucide-react';
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import logo from '../assets/logo.png'
 import '../index.css'
 
@@ -25,7 +25,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="text-xl flex justify-center items-center font-bold"> <img className='w-10' src={logo} alt="" /> <span className='bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] inline-block'>HERO.IO </span></a>
+                <Link href="#" className="text-xl flex justify-center items-center font-bold"> <img className='w-10' src={logo} alt="" /> <span className='bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] inline-block'>HERO.IO </span></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn font-semibold hover:from-[#632EE3] hover:to-[#7f31ec]  bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white px-6 py-5"><Github className='w-5'></Github> Contribute</a>
+                <a href='https://github.com/Rakibislam22' target="_blank" className="btn font-semibold hover:from-[#632EE3] hover:to-[#7f31ec]  bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white px-6 py-5"><Github className='w-5'></Github> Contribute</a>
             </div>
         </div>
     );
