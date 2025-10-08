@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import hero from '../assets/hero.png';
+import Apps from './Pages/Apps';
+
+const trendingPromise = fetch("/trendingData.json").then(res => res.json());
 
 const Home = () => {
     return (
@@ -55,6 +58,16 @@ const Home = () => {
                         <p>31 more will Launch</p>
                     </div>
                 </div>
+            </div>
+
+            <div className='px-3 max-w-[1280px] mx-auto py-10 space-y-10'>
+                <Suspense fallback={<h1>Loading...</h1>}>
+                    <Apps trendingPromise={trendingPromise}></Apps>
+                </Suspense>
+                <div className='flex justify-center items-center'>
+                    <button className='btn font-semibold hover:from-[#632EE3] hover:to-[#7f31ec]  bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white px-8 py-5 '>Show All</button>
+                </div>
+                
             </div>
         </>
 

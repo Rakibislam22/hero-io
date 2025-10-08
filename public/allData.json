@@ -1,0 +1,182 @@
+[
+  {
+    "image": "https://play-lh.googleusercontent.com/79VnwktTFAXPrGMzG8yx_8RExc98MTuoXgSGQvDL9VNl7bDQ7OXcdzruWhcdjBmQuw",
+    "title": "MindEase: Meditation & Relax",
+    "companyName": "CalmMind Studio",
+    "id": 22,
+    "description": "MindEase is a mindfulness and relaxation app designed to help users reduce stress, improve focus, and sleep better. With guided meditations, relaxing music, and breathing exercises, MindEase provides daily tools for emotional well-being. Its soothing soundscapes and personalized meditation sessions make it ideal for busy professionals or anyone seeking inner peace. Track your mood, build habits, and achieve calmness through simple daily practice with MindEase.",
+    "size": 90,
+    "reviews": 4100,
+    "ratingAvg": 4.8,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 3135 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrmHfweXvLPIw_CPvhYQc2TJpQVP9OjbyIQg&s",
+    "title": "FitFuel: Meal Planner",
+    "companyName": "NutriTech Labs",
+    "id": 23,
+    "description": "FitFuel helps users plan nutritious meals tailored to fitness goals. Whether you aim to gain muscle, lose weight, or eat healthier, FitFuel generates custom meal plans and grocery lists. It tracks calories, macronutrients, and water intake to ensure balanced nutrition. Integrated with health apps, it provides insights based on activity levels and preferences. FitFuel turns healthy eating into a sustainable lifestyle with smart automation and delicious recipes.",
+    "size": 75,
+    "reviews": 2600,
+    "ratingAvg": 4.5,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 45 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/JxPBqhNAMKcNQZDvKSfPnOz1GIOkckfeSrb2H2C53CrwS-hXGzbdgKKu4mfPsIlN1-8d",
+    "title": "TaskPro: To-Do Planner",
+    "companyName": "NextGen Productivity",
+    "id": 24,
+    "description": "TaskPro is a powerful task management and to-do list app designed to help users stay organized and focused. With intuitive UI, daily reminders, progress tracking, and cloud sync, TaskPro simplifies personal and professional task management. It supports project labels, color coding, and recurring tasks. Whether managing school assignments or work projects, TaskPro ensures efficiency and productivity every day with smart scheduling and real-time notifications.",
+    "size": 65,
+    "reviews": 5200,
+    "ratingAvg": 4.6,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 3890 }
+    ]
+  },
+  {
+    "image": "https://www.travelmate.com.bd/wp-content/uploads/2022/10/travel-padma-bridge-600-%C3%97-503-px-300x300.png.webp",
+    "title": "TravelMate: Explore & Book",
+    "companyName": "WanderWorld Pvt Ltd",
+    "id": 25,
+    "description": "TravelMate helps travelers discover new destinations, compare flights, and book hotels at the best rates. With smart itinerary planning and local guide recommendations, it simplifies travel organization. The app features real-time flight tracking, weather updates, and currency conversion. Whether planning vacations or business trips, TravelMate provides all-in-one convenience, ensuring smooth journeys and unforgettable experiences with personalized suggestions based on travel history and preferences.",
+    "size": 110,
+    "reviews": 6800,
+    "ratingAvg": 4.7,
+    "downloads": 1600000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1300 },
+      { "name": "5 star", "count": 4950 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/xAfsctCP2_sm1xH1Ca0WiWQ8u1YhRMSVpaG4aVpON1nowur4aRmZNtBKlvbJjqRehQ",
+    "title": "PhotoFix: AI Enhancer",
+    "companyName": "SmartLens Studio",
+    "id": 26,
+    "description": "PhotoFix is an AI-powered photo enhancement app that automatically improves image clarity, sharpness, and color balance. Using advanced machine learning algorithms, it restores old or blurry photos, removes noise, and enhances facial details. Perfect for photographers and casual users, PhotoFix ensures professional-quality results with one tap. It also offers filters, background removal, and portrait retouching tools for complete photo perfection.",
+    "size": 120,
+    "reviews": 9100,
+    "ratingAvg": 4.8,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1300 },
+      { "name": "5 star", "count": 7340 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/-QRJGbuyMrcArhL7_JAl8mlfBH8-tMSUGdMoiVylK9HWdvjtXdFQesB7spT4NcDu2A",
+    "title": "StudyPro: Smart Learning",
+    "companyName": "EduNext Technologies",
+    "id": 27,
+    "description": "StudyPro is an interactive learning platform for students of all levels. It provides access to video lectures, quizzes, flashcards, and practice tests. With AI-based progress tracking, it tailors content to improve weak areas. StudyPro supports multiple subjects, including science, math, and language learning. Designed with modern learners in mind, it offers a distraction-free interface and gamified achievements to make studying engaging and productive.",
+    "size": 130,
+    "reviews": 7100,
+    "ratingAvg": 4.6,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 4920 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/K9Q9P5S0tFcbE2cZeh8A2fBfGH70QIzinz6vZJn0TUp7NNPaLE_kTscVBS-nSN4mYos=w240-h480-rw",
+    "title": "BudgetBee: Expense Tracker",
+    "companyName": "FinSmart Apps",
+    "id": 28,
+    "description": "BudgetBee is a simple yet powerful app for tracking income, expenses, and savings goals. It features intuitive charts, automated category sorting, and monthly summaries. Users can link multiple accounts, export reports, and set spending alerts. Designed for individuals and small businesses, BudgetBee helps you manage finances effortlessly and achieve financial stability through clear insights and goal tracking tools.",
+    "size": 60,
+    "reviews": 4800,
+    "ratingAvg": 4.5,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 3180 }
+    ]
+  },
+  {
+    "image": "https://dl.memuplay.com/new_market/img/com.appsinnova.weatherforecast.liveweather.icon.2023-09-15-22-20-27.png",
+    "title": "Weatherly: Live Forecast",
+    "companyName": "SkyPulse Labs",
+    "id": 29,
+    "description": "Weatherly provides real-time weather forecasts, radar updates, and air quality reports. With a sleek interface and accurate global coverage, users can check hourly and 10-day forecasts. The app includes widgets, storm alerts, and sunrise/sunset times. Whether planning a trip or just your day, Weatherly ensures you stay informed with detailed temperature trends and severe weather notifications.",
+    "size": 85,
+    "reviews": 5600,
+    "ratingAvg": 4.4,
+    "downloads": 1250000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 3550 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/uCneOAP0_XSgjL7DwpD1OI2VvAOXvaCcm24iWKEKQ3BTGJiuVFyOH86-OKkgwM5IVaw",
+    "title": "TuneFlow: Music Player",
+    "companyName": "MelodyWorks",
+    "id": 30,
+    "description": "TuneFlow is a modern music player offering a smooth listening experience with personalized playlists and equalizer settings. It supports all popular audio formats and provides a clean interface for managing local and cloud-stored music. Users can download tracks, view lyrics, and create mood-based playlists. With a minimal design and advanced audio engine, TuneFlow ensures immersive sound quality on every beat.",
+    "size": 90,
+    "reviews": 8400,
+    "ratingAvg": 4.7,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 6240 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/9JRUUGe-pxqoW3BqPUpeV1TB3nDvxIpbdtonhwfUIiKUB5jeOZ-__JdrUtRfLaGV3TT1",
+    "title": "SafeVault: Password Keeper",
+    "companyName": "CyberGuard Systems",
+    "id": 31,
+    "description": "SafeVault is a secure password manager that stores your credentials safely with AES-256 encryption. It supports autofill, biometric authentication, and multi-device sync. With features like password generator and breach alerts, SafeVault helps users manage and protect accounts easily. Ideal for professionals and individuals who value privacy, SafeVault keeps your digital life secure and organized.",
+    "size": 55,
+    "reviews": 3900,
+    "ratingAvg": 4.6,
+    "downloads": 870000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 2820 }
+    ]
+  }
+]

@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <div className=''>
+      <div className='bg-[#f5f5f5]'>
         <Outlet></Outlet>
       </div>
     </>
