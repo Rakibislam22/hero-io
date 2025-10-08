@@ -2,13 +2,14 @@ import { Github } from 'lucide-react';
 import React from 'react';
 import { NavLink } from 'react-router';
 import logo from '../assets/logo.png'
+import '../index.css'
 
 const Navbar = () => {
     const links = <>
 
-    <li className='font-medium'><NavLink>Home</NavLink></li>
-    <li className='font-medium'><NavLink>Apps</NavLink></li>
-    <li className='font-medium'><NavLink>Installation</NavLink></li>
+    <li className='font-medium'><NavLink to={"/"}>Home</NavLink></li>
+    <li className='font-medium'><NavLink to={"/apps"}>Apps</NavLink></li>
+    <li className='font-medium'><NavLink to={"/installation"}>Installation</NavLink></li>
     
     </>
     return (
