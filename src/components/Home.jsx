@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import hero from '../assets/hero.png';
 import Apps from './Pages/Apps';
+import { Link } from 'react-router';
 
 const trendingPromise = fetch("/trendingData.json").then(res => res.json());
 
@@ -65,9 +66,11 @@ const Home = () => {
                     <Apps trendingPromise={trendingPromise}></Apps>
                 </Suspense>
                 <div className='flex justify-center items-center'>
-                    <button className='btn font-semibold hover:from-[#632EE3] hover:to-[#7f31ec]  bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white px-8 py-5 '>Show All</button>
+                    <Link to={"/apps"}>
+                        <button className='btn font-semibold hover:from-[#632EE3] hover:to-[#7f31ec]  bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white px-8 py-5 '>Show All</button>
+                    </Link>
                 </div>
-                
+
             </div>
         </>
 
