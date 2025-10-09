@@ -5,7 +5,7 @@ import starImg from '../../assets/icon-ratings.png'
 const Sapp = ({data}) => {
     const {image, title, downloads, ratingAvg } = data;
     return (
-        <div className=' p-5 space-y-4 bg-white rounded-xl'>
+        <div className=' p-5 space-y-6 bg-white rounded-xl'>
             <div className='flex justify-center items-center'>
                 <img className='rounded-xl' src={image} alt="" />
             </div>

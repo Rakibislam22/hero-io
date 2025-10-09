@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router'
 import './App.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <div className='bg-[#f5f5f5]'>
         <Outlet></Outlet>
       </div>
+      <Footer></Footer>
     </>
   )
 }

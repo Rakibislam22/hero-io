@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUrhGhFUy9zomThwkrYZATXeOR01HLwzwnkw&s",
+    "image": "https://www.crunchgrowth.com/wp-content/uploads/2017/04/mobile_apps.jpg",
     "title": "Photomator",
     "companyName": "PixelSoft",
     "id": 1,
@@ -8,7 +8,7 @@
     "size": 120,
     "reviews": 4523,
     "ratingAvg": 4.5,
-    "downloads": 1200000,
+    "downloads": "1.2M",
     "ratings": [
       { "name": "1 star", "count": 120 },
       { "name": "2 star", "count": 80 },
@@ -26,7 +26,7 @@
     "size": 85,
     "reviews": 3201,
     "ratingAvg": 4.2,
-    "downloads": 850000,
+    "downloads": "850K",
     "ratings": [
       { "name": "1 star", "count": 200 },
       { "name": "2 star", "count": 150 },
@@ -44,7 +44,7 @@
     "size": 45,
     "reviews": 2100,
     "ratingAvg": 4.7,
-    "downloads": 560000,
+    "downloads": "560K",
     "ratings": [
       { "name": "1 star", "count": 40 },
       { "name": "2 star", "count": 25 },
@@ -62,7 +62,7 @@
     "size": 150,
     "reviews": 4120,
     "ratingAvg": 4.3,
-    "downloads": 920000,
+    "downloads": "920K",
     "ratings": [
       { "name": "1 star", "count": 150 },
       { "name": "2 star", "count": 100 },
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Dnl6vgXRAXzaLO-4Y10yHD7CJ0UlLW5Xqw&s",
+    "image": "https://cdn-icons-png.flaticon.com/512/8668/8668837.png",
     "title": "Recipe-Discoveries",
     "companyName": "FoodieLabs",
     "id": 5,
@@ -80,7 +80,7 @@
     "size": 75,
     "reviews": 1850,
     "ratingAvg": 4.6,
-    "downloads": 450000,
+    "downloads": "450K",
     "ratings": [
       { "name": "1 star", "count": 30 },
       { "name": "2 star", "count": 20 },
@@ -98,7 +98,7 @@
     "size": 60,
     "reviews": 2300,
     "ratingAvg": 4.4,
-    "downloads": 700000,
+    "downloads": "700K",
     "ratings": [
       { "name": "1 star", "count": 60 },
       { "name": "2 star", "count": 45 },
@@ -116,7 +116,7 @@
     "size": 110,
     "reviews": 3950,
     "ratingAvg": 4.5,
-    "downloads": 980000,
+    "downloads": "980K",
     "ratings": [
       { "name": "1 star", "count": 100 },
       { "name": "2 star", "count": 80 },
@@ -134,7 +134,7 @@
     "size": 95,
     "reviews": 2700,
     "ratingAvg": 4.3,
-    "downloads": 650000,
+    "downloads": "650K",
     "ratings": [
       { "name": "1 star", "count": 90 },
       { "name": "2 star", "count": 70 },
