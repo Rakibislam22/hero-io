@@ -8,6 +8,7 @@ import Home from './components/Home.jsx';
 import Navbar from './components/Navbar.jsx';
 import ErrorPage from './components/ErrorPage.jsx';
 import AllApps from './components/Pages/allApps.jsx';
+import DetailApps from './components/Pages/DetailApps.jsx';
 
 
 const router = createBrowserRouter([
@@ -22,7 +23,12 @@ const router = createBrowserRouter([
       {
         path: "/apps",
         Component: AllApps,
+      },
+      {
+        path: "/appDetails/:id",
+        Component: DetailApps,
       }
+
     ],
     errorElement: <ErrorPage></ErrorPage>
   },
