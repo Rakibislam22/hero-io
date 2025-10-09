@@ -64,7 +64,7 @@ const DetailApps = () => {
                         </div>
                     </div>
 
-                    <button className="bg-[#00D390] hover:bg-[#01a772] text-white px-6 py-2 rounded-md">
+                    <button className="btn bg-[#00D390] hover:bg-[#01a772] text-white px-6 py-2 rounded-sm">
                         Install Now ({aData.size} MB)
                     </button>
                 </div>
