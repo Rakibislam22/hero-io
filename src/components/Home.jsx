@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import hero from '../assets/hero.png';
 import Apps from './Pages/Apps';
 import { Link } from 'react-router';
+import Loading from './Pages/Loading';
 
 const trendingPromise = fetch("/trendingData.json").then(res => res.json());
 
@@ -62,7 +63,7 @@ const Home = () => {
             </div>
 
             <div className='px-3 max-w-[1280px] mx-auto py-10 space-y-10'>
-                <Suspense fallback={<h1>Loading...</h1>}>
+                <Suspense fallback={<Loading></Loading>}>
                     <Apps trendingPromise={trendingPromise}></Apps>
                 </Suspense>
                 <div className='flex justify-center items-center'>

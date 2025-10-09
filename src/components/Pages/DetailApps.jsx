@@ -4,6 +4,7 @@ import downImg from "../../assets/icon-downloads.png";
 import ratingsImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import Loading from "./Loading";
 
 const DetailApps = () => {
     const { id } = useParams();
@@ -26,7 +27,7 @@ const DetailApps = () => {
 
     // const data = aData.ratings || [];
 
-    if (loading) return <div className="text-center py-10">Loading...</div>;
+    if (loading) return <Loading></Loading>;
     if (!aData) return <div className="text-center py-10">App not found.</div>;
 
     return (

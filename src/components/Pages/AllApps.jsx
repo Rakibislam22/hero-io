@@ -1,10 +1,24 @@
-import React, { use } from 'react';
+import React, { useEffect, useState } from 'react';
 import Sapp from './Sapp';
+import Loading from './Loading';
 
-const allDataPromise = fetch('/allData.json').then(res => res.json());
 
 const AllApps = () => {
-       const allData = use(allDataPromise);
+       const [allData, setAllDta] = useState([]);
+       const [loading, setLoading] = useState(true);
+
+       useEffect(() => {
+            fetch('/allData.json')
+            .then(res => res.json())
+            .then(data => {
+                setAllDta(data)
+                setLoading(false);
+            })     
+            .catch(() => setLoading(false));
+       },[])
+
+       if (loading) return <Loading></Loading>
+
     return (
         <div className='max-w-7xl mx-auto px-6 py-12'>
             <h1 className='text-4xl text-[#001931] font-bold text-center'>Our All Applications</h1>
