@@ -11,7 +11,7 @@ const Installation = () => {
     const [loading, setLoading] = useState(true);
 
     const arr = localStorage.getItem('app');
-    const [localStorageData, setLocalStorageData] = useState(JSON.parse(arr));
+    const [localStorageData, setLocalStorageData] = useState(arr ? JSON.parse(arr) : []);
 
     if (loading) {
         setTimeout(() => setLoading(false), 100);
@@ -79,7 +79,7 @@ const Installation = () => {
 
             <div>
                 {
-                    localStorageData.map(appData => <SingleCardForIns handleLocalStorageData={handleLocalStorageData} appData={appData}></SingleCardForIns>)
+                    localStorageData.map(appData => <SingleCardForIns key={appData.id} handleLocalStorageData={handleLocalStorageData} appData={appData}></SingleCardForIns>)
                 }
                 {
                     localStorageData.length === 0 && (
