@@ -440,24 +440,24 @@
     "downloads": 850000,
     "ratings": [
       {
-        "name": "1 star",
-        "count": 200
-      },
-      {
-        "name": "2 star",
-        "count": 150
-      },
-      {
-        "name": "3 star",
-        "count": 600
+        "name": "5 star",
+        "count": 1151
       },
       {
         "name": "4 star",
         "count": 1100
       },
       {
-        "name": "5 star",
-        "count": 1151
+        "name": "3 star",
+        "count": 600
+      },
+      {
+        "name": "2 star",
+        "count": 150
+      },
+      {
+        "name": "1 star",
+        "count": 200
       }
     ]
   },

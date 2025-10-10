@@ -1,17 +1,19 @@
-import { Outlet, useNavigation } from 'react-router'
+import { Outlet } from 'react-router'
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Loading from './components/Pages/Loading';
+import { Suspense } from 'react';
 
 function App() {
-  const navigation = useNavigation();
   return (
     <>
       <Navbar></Navbar>
-      {navigation.state === "loading" && <Loading></Loading> }
+      
       <div className='bg-[#f5f5f5]'>
-        <Outlet></Outlet>
+        <Suspense fallback={<Loading></Loading>}>
+          <Outlet></Outlet>
+        </Suspense>
       </div>
       <Footer></Footer>
     </>

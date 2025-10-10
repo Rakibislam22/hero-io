@@ -5,11 +5,16 @@ import ratingsImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import Loading from "./Loading";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
 
 const DetailApps = () => {
     const { id } = useParams();
     const [aData, setAData] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [disButton, setDisButton] = useState(false);
 
 
     useEffect(() => {
@@ -23,9 +28,38 @@ const DetailApps = () => {
             .catch(() => setLoading(false));
     }, [id]);
 
-    // console.log(aData);
+    const getArr = () => {
+        const arr = localStorage.getItem('app');
+        return arr ? JSON.parse(arr) : [];
+    }
 
-    // const data = aData.ratings || [];
+    const handleLocalstorage = () => {
+        const appData = getArr();
+        const alreadyAdded = appData.find(data => data.id == id);
+        if (!alreadyAdded) {
+            const newAppData = [...appData, aData];
+            localStorage.setItem("app", JSON.stringify(newAppData));
+            setDisButton(true); 
+
+            Swal.fire({
+            title: "Installed Successfully",
+            text: "Now you can Run The App!",
+            icon: "success"
+        });
+        }
+
+        
+
+    }
+
+    useEffect(() => {
+        if (aData) {
+            const get = getArr();
+            const exists = get.find(data => data.id == id);
+            if (exists) setDisButton(true);
+
+        }
+    }, [aData, id]);
 
     if (loading) return <Loading></Loading>;
     if (!aData) return <div className="text-center py-10">App not found.</div>;
@@ -64,8 +98,11 @@ const DetailApps = () => {
                         </div>
                     </div>
 
-                    <button className="btn bg-[#00D390] hover:bg-[#01a772] text-white px-6 py-2 rounded-sm">
-                        Install Now ({aData.size} MB)
+                    <button onClick={handleLocalstorage} className={`${disButton ? " " : "btn"} text-white px-6 py-2 rounded-sm 
+                            ${disButton
+                            ? "bg-[#38ad88] cursor-not-allowed"
+                            : "bg-[#00D390] hover:bg-[#01a772]"}`}>
+                        {disButton ? "Installed" : `Install Now (${aData.size} MB)`}
                     </button>
                 </div>
             </div>
@@ -83,7 +120,7 @@ const DetailApps = () => {
                                     <XAxis type="number" />
                                     <YAxis type="category" dataKey="name" />
                                     <Tooltip />
-                                    
+
                                     <Bar dataKey="count" fill="#FF8811" barSize={30} />
                                 </BarChart>
 

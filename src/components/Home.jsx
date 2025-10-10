@@ -4,9 +4,14 @@ import Apps from './Pages/Apps';
 import { Link } from 'react-router';
 import Loading from './Pages/Loading';
 
-const trendingPromise = fetch("/trendingData.json").then(res => res.json());
 
 const Home = () => {
+    const trendingPromise = fetch("/trendingData.json")
+    .then(res => res.json())
+    .then(data => {
+      
+      return new Promise(resolve => setTimeout(() => resolve(data), 50));
+    });
     return (
         <>
             <div className='space-y-6 text-center py-12 px-3 max-w-[1280px] mx-auto'>
