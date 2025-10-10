@@ -49,9 +49,9 @@ const Installation = () => {
 
         let sortedData = [...localStorageData];
         if (order === "High-Low") {
-            sortedData.sort((a, b) => b.size - a.size);
+            sortedData.sort((a, b) => b.downloads - a.downloads);
         } else if (order === "Low-High") {
-            sortedData.sort((a, b) => a.size - b.size);
+            sortedData.sort((a, b) => a.downloads - b.downloads);
         }
 
         setLocalStorageData(sortedData);
@@ -68,8 +68,8 @@ const Installation = () => {
                         {localStorageData.length} Apps Found
                     </p>
                     <div>
-                        <select defaultValue="Sort By Size" onChange={handleSortChange} className="select">
-                            <option disabled={true}>Sort By Size</option>
+                        <select defaultValue="Sort By Downloads" onChange={handleSortChange} className="select">
+                            <option disabled={true}>Sort By Downloads</option>
                             <option>High-Low</option>
                             <option>Low-High</option>
                         </select>

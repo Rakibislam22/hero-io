@@ -14,7 +14,7 @@ const Sapp = ({ data }) => {
     }
 
     return (
-        <div onClick={handleNavigate} className=' p-4 space-y-6 bg-white rounded-lg'>
+        <div onClick={handleNavigate} className=' hover:scale-105 p-4 space-y-6 bg-white rounded-lg'>
             <div className='flex justify-center items-center'>
                 <img className='rounded-xl' src={image} alt="" />
             </div>
