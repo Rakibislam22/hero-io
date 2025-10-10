@@ -2,18 +2,23 @@ import React, { useState } from 'react';
 import SingleCardForIns from './SingleCardForIns';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import Loading from './Loading';
 
 const MySwal = withReactContent(Swal)
 
 
 const Installation = () => {
+    const [loading, setLoading] = useState(true);
 
     const arr = localStorage.getItem('app');
     const [localStorageData, setLocalStorageData] = useState(JSON.parse(arr));
 
+    if (loading) {
+        setTimeout(() => setLoading(false), 100);
+        return <Loading></Loading>;
+    }
+
     const handleLocalStorageData = (id) => {
-
-
         Swal.fire({
             title: "Are you sure?",
             text: "You won't be able to revert this!",
@@ -63,7 +68,7 @@ const Installation = () => {
                         {localStorageData.length} Apps Found
                     </p>
                     <div>
-                        <select defaultValue="Sort By Size" onChange={handleSortChange}  className="select">
+                        <select defaultValue="Sort By Size" onChange={handleSortChange} className="select">
                             <option disabled={true}>Sort By Size</option>
                             <option>High-Low</option>
                             <option>Low-High</option>
