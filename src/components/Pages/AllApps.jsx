@@ -29,7 +29,7 @@ const AllApps = ({ dataPromise }) => {
     return (
         <div className='max-w-7xl mx-auto px-6 py-12'>
             <h1 className='text-4xl text-[#001931] font-bold text-center'>Our All Applications</h1>
-            <p className='text-xl text-[#627382] py-4 text-center'>Explore All Apps on the Market developed by us. We code for Millions</p>
+            <p className='text-xl text-[#627382] py-4 text-center pb-10'>Explore All Apps on the Market developed by us. We code for Millions</p>
             <div className='flex max-sm:flex-col-reverse justify-between items-center'>
                 <div>
                     <p className='text-2xl text-[#001931] font-semibold py-5'>({filterData.length}) Apps Found</p>

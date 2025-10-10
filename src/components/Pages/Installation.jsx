@@ -38,18 +38,32 @@ const Installation = () => {
         });
     }
 
+
+    const handleSortChange = (e) => {
+        const order = e.target.value;
+
+        let sortedData = [...localStorageData];
+        if (order === "High-Low") {
+            sortedData.sort((a, b) => b.size - a.size);
+        } else if (order === "Low-High") {
+            sortedData.sort((a, b) => a.size - b.size);
+        }
+
+        setLocalStorageData(sortedData);
+    };
+
     return (
 
         <div className='py-15 pb-35 max-w-7xl mx-auto px-3 '>
-            <div className='space-y-4'>
+            <div className='space-y-4 '>
                 <h1 className='text-4xl text-[#001931] font-bold text-center '>Your Installed Apps</h1>
-                <p className='text-[#627382] text-xl text-center'>Explore All Trending Apps on the Market developed by us</p>
+                <p className='text-[#627382] text-xl text-center pb-5'>Explore All Trending Apps on the Market developed by us</p>
                 <div className='flex justify-between items-center'>
                     <p className='text-2xl text-[#001931] font-semibold '>
                         {localStorageData.length} Apps Found
                     </p>
                     <div>
-                        <select defaultValue="Sort By Size" className="select">
+                        <select defaultValue="Sort By Size" onChange={handleSortChange}  className="select">
                             <option disabled={true}>Sort By Size</option>
                             <option>High-Low</option>
                             <option>Low-High</option>
