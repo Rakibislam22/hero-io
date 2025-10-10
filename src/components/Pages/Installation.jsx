@@ -1,17 +1,52 @@
-import React from 'react';
-import downImg from "../../assets/icon-downloads.png";
-import ratingsImg from "../../assets/icon-ratings.png";
+import React, { useState } from 'react';
+import SingleCardForIns from './SingleCardForIns';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
+
 
 const Installation = () => {
+
+    const arr = localStorage.getItem('app');
+    const [localStorageData, setLocalStorageData] = useState(JSON.parse(arr));
+
+    const handleLocalStorageData = (id) => {
+
+
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, Uninstall it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+
+                const newLocalStorageData = [...localStorageData.filter(data => data.id != id)];
+                setLocalStorageData(newLocalStorageData);
+                localStorage.setItem("app", JSON.stringify(newLocalStorageData));
+
+                Swal.fire({
+                    title: "Uninstalled!",
+                    text: "Your App has been Uninstalled.",
+                    icon: "success"
+                });
+            }
+        });
+    }
+
     return (
 
-        <div className='py-15 max-w-7xl mx-auto px-3 '>
+        <div className='py-15 pb-35 max-w-7xl mx-auto px-3 '>
             <div className='space-y-4'>
                 <h1 className='text-4xl text-[#001931] font-bold text-center '>Your Installed Apps</h1>
                 <p className='text-[#627382] text-xl text-center'>Explore All Trending Apps on the Market developed by us</p>
                 <div className='flex justify-between items-center'>
                     <p className='text-2xl text-[#001931] font-semibold '>
-                        1 Apps Found
+                        {localStorageData.length} Apps Found
                     </p>
                     <div>
                         <select defaultValue="Sort By Size" className="select">
@@ -22,54 +57,21 @@ const Installation = () => {
                     </div>
                 </div>
             </div>
-            <div className='my-4 flex items-center justify-between p-4 gap-5 bg-white rounded-sm'>
-                <div className='flex items-center gap-5'>
-                    <div>
-                        <img className='w-20 rounded-lg' src="https://play-lh.googleusercontent.com/sAGShCwPaqv32C3iaenxqM0GkbRpkX-n436HRHlvzHcZYY5H_rWXKilMsdOk85Jb9Hk=w240-h480-rw" alt="" />
-                    </div>
-                    <div c>
-                        <h1 className='text-[#001931] text-xl font-semibold py-2'>Forest: Focus for Productivity</h1>
-                        <div className='flex items-center gap-5'>
-                            <div className='flex justify-center items-center text-[#00D390] gap-1'>
-                                <img className='w-5' src={downImg} alt="" />
-                                <p>9M</p>
-                            </div>
-                            <div className='flex justify-center items-center gap-1 text-[#FF8811]'>
-                                <img className='w-5' src={ratingsImg} alt="" />
-                                <p>5</p>
-                            </div>
-                            <div>
-                                <p className='text-[#627382]'>258 MB</p>
-                            </div>
+
+            <div>
+                {
+                    localStorageData.map(appData => <SingleCardForIns handleLocalStorageData={handleLocalStorageData} appData={appData}></SingleCardForIns>)
+                }
+                {
+                    localStorageData.length === 0 && (
+                        <div className='text-center py-40'>
+                            <h1 className='text-2xl text-[#001931] font-semibold '>You didn't installed any app yet!</h1>
                         </div>
-                    </div>
-                </div>
-                <button className='btn bg-[#00D390] hover:bg-[#01a772] text-white px-6 py-2 rounded-sm'>Uninstall</button>
+                    )
+                }
+
             </div>
-            <div className='my-4 flex items-center justify-between p-4 gap-5 bg-white rounded-sm'>
-                <div className='flex items-center gap-5'>
-                    <div>
-                        <img className='w-20 rounded-lg' src="https://play-lh.googleusercontent.com/sAGShCwPaqv32C3iaenxqM0GkbRpkX-n436HRHlvzHcZYY5H_rWXKilMsdOk85Jb9Hk=w240-h480-rw" alt="" />
-                    </div>
-                    <div c>
-                        <h1 className='text-[#001931] text-xl font-semibold py-2'>Forest: Focus for Productivity</h1>
-                        <div className='flex items-center gap-5'>
-                            <div className='flex justify-center items-center text-[#00D390] gap-1'>
-                                <img className='w-5' src={downImg} alt="" />
-                                <p>9M</p>
-                            </div>
-                            <div className='flex justify-center items-center gap-1 text-[#FF8811]'>
-                                <img className='w-5' src={ratingsImg} alt="" />
-                                <p>5</p>
-                            </div>
-                            <div>
-                                <p className='text-[#627382]'>258 MB</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button className='btn bg-[#00D390] hover:bg-[#01a772] text-white px-6 py-2 rounded-sm'>Uninstall</button>
-            </div>
+
         </div>
 
     );

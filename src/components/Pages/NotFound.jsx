@@ -5,7 +5,7 @@ const NotFound = () => {
     return (
         <div className="mt-20 flex flex-col items-center space-y-4">
             <img src={noFound} alt="404 illustration" className="w-80 max-w-xs mb-6" />
-            <h1 className="text-4xl font-semibold mt-4">OPPS!! APP NOT FOUND</h1>
+            <h1 className="text-4xl font-semibold mt-4 text-center">OPPS!! APP NOT FOUND</h1>
             <p className="text-[#627382] mt-2 text-xl">
                 The App you are requesting is not found on our system.  please try another apps
             </p>
