@@ -18,7 +18,7 @@ const DetailApps = () => {
 
 
     useEffect(() => {
-        fetch("/allData.json")
+        fetch("https://raw.githubusercontent.com/Rakibislam22/hero-io/refs/heads/main/public/allData.json")
             .then((res) => res.json())
             .then((allData) => {
                 const app = allData.find(d => d.id == id);
@@ -39,16 +39,16 @@ const DetailApps = () => {
         if (!alreadyAdded) {
             const newAppData = [...appData, aData];
             localStorage.setItem("app", JSON.stringify(newAppData));
-            setDisButton(true); 
+            setDisButton(true);
 
             Swal.fire({
-            title: "Installed Successfully",
-            text: "Now you can Run The App!",
-            icon: "success"
-        });
+                title: "Installed Successfully",
+                text: "Now you can Run The App!",
+                icon: "success"
+            });
         }
 
-        
+
 
     }
 

@@ -3,7 +3,7 @@ import AllApps from './AllApps';
 import Loading from './Loading';
 
 const FetchingData = () => {
-  const dataPromise = fetch('/allData.json')
+  const dataPromise = fetch('https://raw.githubusercontent.com/Rakibislam22/hero-io/refs/heads/main/public/allData.json')
     .then(res => res.json())
     .then(data => {
       return new Promise(resolve => setTimeout(() => resolve(data), 50));
